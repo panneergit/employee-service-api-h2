@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.employee.api.h2</groupId>
 	<artifactId>employee-service-api-h2</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1-SNAPSHOT</version>
 	<name>Employee Service API H2</name>
 	<description>Employee Service API H2 Database</description>
 	<url/>
