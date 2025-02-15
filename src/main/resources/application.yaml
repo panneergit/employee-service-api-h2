@@ -1,0 +1,33 @@
+server:
+  port: 9091
+  servlet.context-path: /api
+  error.include-stacktrace: never
+
+spring:
+  application.name: employee-service
+
+---
+spring:
+  h2.console.enabled: true
+  h2.console.path: /h2-console
+  datasource:
+    url: jdbc:h2:mem:employeedb
+    username: sa
+    password: 
+    driver-class-name: org.h2.Driver
+  sql.init.platform: h2
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto: none
+    defer-datasource-initialization: true
+    show-sql: true
+  h2:
+    console:
+      settings:
+        web-allow-others: true
+
+---
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url: true
+    path: /docs
